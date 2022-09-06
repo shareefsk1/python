@@ -1,0 +1,20 @@
+a = int(input())
+b = int(input())
+
+count = 0
+integer_in_a_input = ""
+for i in range(a,b+1) :
+    lenght_of_a = len(str(i))
+    carrying_digit = 0
+    for j in str(i) :
+        adding_number = int(j) ** lenght_of_a
+        carrying_digit = carrying_digit + adding_number
+    if carrying_digit == int(i) :
+        integer_in_a_input  = integer_in_a_input + str(i) + " "
+        count = count + 1
+        
+if count >= 1 :
+    print(integer_in_a_input)
+else :
+    print("-1")
+        
