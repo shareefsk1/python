@@ -1,0 +1,8 @@
+a = input()
+
+
+for i in a.split() :
+    length = len(i)
+    break
+
+print(a[:length].upper() + a[length:])
