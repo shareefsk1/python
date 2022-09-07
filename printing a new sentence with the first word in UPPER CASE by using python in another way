@@ -1,0 +1,12 @@
+sentence = input()
+
+word_length = 0
+for i in sentence :
+    if i == " " :
+        break 
+    else :
+        word_length = word_length + 1
+
+first_word_upper = sentence[:word_length].upper()
+remaining_sentence = sentence[word_length:]
+print(first_word_upper + remaining_sentence )
