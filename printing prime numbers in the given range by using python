@@ -1,0 +1,21 @@
+first_input = int(input())
+second_input = int(input())
+
+if  (first_input < 2) :
+    first_input = 2
+
+N0_prime = True
+for i in range(first_input,second_input+1) :
+    prime = True
+    for j in range(2,i) :
+        if i % j == 0 :
+            prime = False
+            break
+            
+    if prime == True :
+        print(i)
+        N0_prime = False
+        break
+    
+if N0_prime :
+    print("No prime numbers in the given range ")
