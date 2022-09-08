@@ -1,0 +1,10 @@
+a = input()
+a = a[0].lower() + a[1:]
+
+carry_var = ""
+for i in a :
+    if i == i.upper() :
+        c = "_" + i
+        i = i.replace(i,c.lower())
+    carry_var = carry_var + i
+print(carry_var)
