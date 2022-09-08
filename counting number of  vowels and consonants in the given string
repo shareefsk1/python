@@ -1,0 +1,15 @@
+string = input()
+string = string.upper()
+
+vowels = 0
+consonants = 0
+for i in string :
+    if i in ["A","E","I","O","U"] :
+        vowels = vowels + 1
+    elif i == " " :
+        pass
+    else :
+        consonants = consonants + 1
+    
+print(vowels)
+print(consonants)
