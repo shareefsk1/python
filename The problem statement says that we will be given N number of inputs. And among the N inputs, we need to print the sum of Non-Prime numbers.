@@ -1,0 +1,16 @@
+total_no_of_inputs = int(input())
+
+counting_total_non_prime = 0
+
+for i in range(0,total_no_of_inputs) :
+    n_lines_of_inputs = int(input())
+   
+    is_nonprime = False
+    for j in range(2,n_lines_of_inputs) :
+        if n_lines_of_inputs % j == 0 :
+            is_nonprime = True
+    
+    if is_nonprime :
+        counting_total_non_prime = counting_total_non_prime + n_lines_of_inputs
+
+print(counting_total_non_prime)
