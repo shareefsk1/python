@@ -1,0 +1,8 @@
+a = int(input())
+alphabets = "abcdefghijklmnopqrstuvwxyz"
+alphabets = alphabets.upper()
+
+output = ""
+for i in range(0,a) :
+    output = output + alphabets[i] + " "
+    print(output)
