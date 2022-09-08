@@ -1,0 +1,15 @@
+given_integer = int(input())
+
+counter = given_integer
+right_space = 0
+while counter > 0 :
+    print(right_space*" " + counter*"* ")
+    counter = counter - 1
+    right_space = right_space + 1
+
+counter1 = 2
+right_space1 = given_integer - 2
+while counter1 <= given_integer :
+    print(right_space1*" " + counter1*"* ")
+    counter1 = counter1 + 1
+    right_space1 = right_space1 - 1
