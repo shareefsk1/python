@@ -1,0 +1,13 @@
+a = input()
+
+nextword = ""
+for i in a :
+    if i == " " :
+        nextword = nextword + " "
+        continue
+    else :
+        converting_to_unicode = ord(i) + 1
+        unicode_to_character = chr(converting_to_unicode)
+        nextword = nextword + unicode_to_character
+        
+print(nextword)
