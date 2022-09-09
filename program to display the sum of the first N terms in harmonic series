@@ -1,0 +1,7 @@
+a = int(input())
+carrying_sum_of_harmonic= 0
+
+for i in range(1,a+1) :
+    harmonic_series = 1 / i
+    carrying_sum_of_harmonic = carrying_sum_of_harmonic + harmonic_series
+print(round(carrying_sum_of_harmonic,2))
