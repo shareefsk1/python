@@ -1,0 +1,40 @@
+a = input()
+
+length_of_input = len(a)
+scale = a[length_of_input-1]
+a = float(a[:length_of_input-1])
+
+if scale == "C" :
+    
+    print(str(a) + "C")
+    
+    Faherenheit =( (9*(a)/5) + 32 )
+    print(str(Faherenheit) + "F")
+    
+    Kelvin = (a) + 273 
+    print(str(float(Kelvin)) + "K")
+    
+    
+elif scale == "F" :
+    Celsius = ((a-32)*5)/9
+    Celsius = "{:.2f}".format(Celsius)
+    Celsius = str(Celsius).strip("0")
+    print(str(float(Celsius)) + "C")
+    
+    print(str(a) + "F")
+    
+    Kelvin = float(Celsius) + 273
+    print(str(Kelvin) + "K")
+    
+else :
+    Celsius = a - 273
+    print(str(Celsius) + "C")
+    
+    Faherenheit =( (9*(Celsius)/5) + 32 )
+    Faherenheit = "{:.2f}".format(Faherenheit)
+    Faherenheit = str(Faherenheit).strip("0")
+    print(str(Faherenheit) + "F")
+    
+    print(str(a) + "K")
+    
+    
