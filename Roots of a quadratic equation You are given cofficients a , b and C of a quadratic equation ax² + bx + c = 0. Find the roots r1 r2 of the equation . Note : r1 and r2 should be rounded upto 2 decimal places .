@@ -1,0 +1,9 @@
+cofficient_a = int(input())
+cofficient_b = int(input())
+cofficient_c = int(input())
+
+root1 = ( -cofficient_b + ((abs(cofficient_b**2) - 4*cofficient_a*cofficient_c)**0.5)) / (2 * cofficient_a)
+print(round(root1,2))
+
+root2 = ( -cofficient_b - ((abs(cofficient_b**2) - 4*cofficient_a*cofficient_c)**0.5)) / (2 * cofficient_a)
+print(round(root2,2))
