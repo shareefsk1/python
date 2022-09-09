@@ -1,0 +1,25 @@
+a = int(input())
+
+left_spaces = a-1
+hallow_spaces = 1 
+
+for i in range(1,a+1) :
+    if i == 1 :
+        print(left_spaces*" " + "*")
+        left_spaces = left_spaces - 1
+
+    else :
+        print(left_spaces*" " + "*" + hallow_spaces*" " + "*")
+        left_spaces = left_spaces - 1
+        hallow_spaces = hallow_spaces + 2
+
+counter = a-2
+left_spaces = 1
+hallow_spaces = (2*a - 1) - 4
+while counter > 0 :
+    print(left_spaces*" " + "*" + hallow_spaces*" " + "*")
+    counter = counter - 1
+    left_spaces = left_spaces + 1
+    hallow_spaces = hallow_spaces - 2
+    
+print((a-1)*" " + "*")
