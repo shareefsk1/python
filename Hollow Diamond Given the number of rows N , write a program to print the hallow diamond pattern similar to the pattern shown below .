@@ -1,0 +1,26 @@
+a = int(input())
+
+Alphabetic_string = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+
+left_spaces = a-1
+hallow_spaces = 1
+for i in range(0,a) :
+    if i == 0 :
+        print(left_spaces*" " + Alphabetic_string[0])
+        left_spaces = left_spaces - 1
+    else :
+        print(left_spaces*" " + Alphabetic_string[i] + hallow_spaces*" " +Alphabetic_string[i] )
+        left_spaces = left_spaces - 1
+        hallow_spaces = hallow_spaces + 2
+        
+counter = a-2
+left_spaces1 = 1
+hallow_spaces1 = (2*a - 1) - 4
+while counter > 0 :
+
+        print(left_spaces1*" " +Alphabetic_string[counter] + hallow_spaces1*" " + Alphabetic_string[counter]  )
+        left_spaces1 = left_spaces1 + 1
+        hallow_spaces1 = hallow_spaces1 - 2
+        counter = counter -1
+    
+print(left_spaces1* " " + Alphabetic_string[0])
