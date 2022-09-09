@@ -1,0 +1,13 @@
+a = int(input())
+
+hallow_space = 0
+carring_value_of_a = a
+for i in range(0,carring_value_of_a) :
+    print(carring_value_of_a*"* " + hallow_space*"  " + carring_value_of_a * "* ")
+    hallow_space = hallow_space + 2
+    carring_value_of_a = carring_value_of_a - 1
+
+hallow_space1 = (2*a)-2    
+for j in range(1,a+1) :
+    print(j*"* " + hallow_space1*"  " + j * "* ")
+    hallow_space1 = hallow_space1 - 2
