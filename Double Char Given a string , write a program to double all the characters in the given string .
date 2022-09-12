@@ -1,0 +1,6 @@
+a = input()
+
+doubled = ""
+for char in a :
+    doubled = doubled + str(char) + str(char)
+print(doubled)
