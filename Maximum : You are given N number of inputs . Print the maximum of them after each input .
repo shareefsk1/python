@@ -1,0 +1,9 @@
+a = int(input())
+
+max_input = 0
+for i in range(0,a) :
+    b = int(input())
+    if max_input < b :
+        max_input = b
+    
+    print(max_input )
