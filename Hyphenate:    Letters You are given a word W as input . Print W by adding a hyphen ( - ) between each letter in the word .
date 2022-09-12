@@ -1,0 +1,8 @@
+a = input()
+
+adding_hypean = ""
+for char in a :
+    adding_hypean = adding_hypean + char + "-"
+    
+adding_hypean = adding_hypean.strip("-")
+print(adding_hypean)
