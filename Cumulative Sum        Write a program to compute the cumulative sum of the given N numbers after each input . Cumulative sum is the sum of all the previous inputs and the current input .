@@ -1,0 +1,7 @@
+no_of_inputs = int(input())
+
+cummulative_sum = 0
+for i in range(1,no_of_inputs+1) :
+    inputs = int(input())
+    cummulative_sum += inputs
+    print(cummulative_sum)
