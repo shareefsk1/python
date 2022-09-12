@@ -1,0 +1,11 @@
+no_of_inputs = int(input())
+
+cumulative_avarage = 0
+sum_of_inputs = 0
+for i in range(1,no_of_inputs+1) :
+    inputs = int(input())
+    #sum of inputs with previous inputs
+    sum_of_inputs += inputs
+    #avaraging the sum of inputs
+    cumulative_avarage = sum_of_inputs / i
+    print(round(cumulative_avarage,3))
