@@ -1,0 +1,16 @@
+a = int(input())
+
+upward_left_spaces = a - 1
+upward_hallow_spaces = 0
+for i in range(0,a) :
+        print(upward_left_spaces*" " + "/" + upward_hallow_spaces*" " + "\\"  )
+        upward_left_spaces -= 1
+        upward_hallow_spaces+=2
+
+
+down_left_spaces = 0
+down_hallow_spaces = (2*a) - 2 
+for j in range(0,a) :
+        print(down_left_spaces*" " + "\\" + down_hallow_spaces*" " + "/"  )
+        down_left_spaces += 1
+        down_hallow_spaces-=2
