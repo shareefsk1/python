@@ -1,0 +1,7 @@
+a = input().split()
+reverse_list = a[::-1]
+
+string  = ""
+for i in reverse_list :
+    string += i + " "
+print(string)
