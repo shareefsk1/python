@@ -1,0 +1,10 @@
+a = input().split() # converting input into a list
+
+#getting acronyms from list
+carrying_string = ""
+for i in a :
+    carrying_string = carrying_string + i[0] + "."
+
+#removing extra dots
+carrying_string = carrying_string.strip(".")    
+print(carrying_string)
