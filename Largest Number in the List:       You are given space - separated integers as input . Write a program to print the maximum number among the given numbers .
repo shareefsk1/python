@@ -1,0 +1,10 @@
+a = input().split()#converting string into list
+#updating list items(string - integers)
+for i in range(len(a)):
+    a[i]= int(a[i])
+#checking maximum number
+max_num = a[i]   
+for i in range(len(a)) :
+    if a[i]>=max_num :
+        max_num = a[i]
+print(max_num)
