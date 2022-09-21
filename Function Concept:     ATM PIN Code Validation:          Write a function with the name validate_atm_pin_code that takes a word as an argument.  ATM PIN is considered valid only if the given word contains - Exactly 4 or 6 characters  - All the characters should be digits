@@ -1,0 +1,20 @@
+def validate_atm_pin_code(pin):
+    # function
+    length_of_pin = len(pin)
+    if length_of_pin == 4 or length_of_pin == 6 :
+        count = 0
+        for i in pin :
+            if i.isdigit() :
+                count += 1
+            else :
+                count += 0
+        if count == length_of_pin :
+            print("Valid PIN Code")
+        else :
+            print("Invalid PIN Code")
+    else :
+        print("Invalid PIN Code")
+
+pin = input()
+# Call the validate_atm_pin_code function
+validate_atm_pin_code(pin)
