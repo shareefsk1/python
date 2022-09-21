@@ -1,0 +1,10 @@
+def number_of_cars_needed(no_of_people):
+    #function
+        if no_of_people % 5 == 0 :
+            print(no_of_people//5)
+        else :
+            print((no_of_people//5) + 1)
+
+no_of_people = int(input())
+# Call the number_of_cars_needed function
+number_of_cars_needed(no_of_people)
