@@ -1,0 +1,13 @@
+def sum_of_the_digits(number):
+    # Complete this recursive function
+    number = str(number)
+    length = len(number)
+    if length == 1 :
+        return int(number)
+    
+    return int(number[length-1]) +sum_of_the_digits(number[:length-1]) 
+
+number = int(input())
+# Call the sum_of_the_digits function
+result = sum_of_the_digits(number)
+print(result)
