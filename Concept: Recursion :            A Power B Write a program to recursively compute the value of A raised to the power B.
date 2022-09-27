@@ -1,0 +1,12 @@
+def calculate_power(x, y):
+    # Complete this recursive function
+    if y == 1 :
+        return x
+    multiply = x * calculate_power(x,(y-1))
+    return multiply
+
+a = int(input())
+b = int(input())
+# Call the calculate_power function
+output = calculate_power(a,b)
+print(output)
