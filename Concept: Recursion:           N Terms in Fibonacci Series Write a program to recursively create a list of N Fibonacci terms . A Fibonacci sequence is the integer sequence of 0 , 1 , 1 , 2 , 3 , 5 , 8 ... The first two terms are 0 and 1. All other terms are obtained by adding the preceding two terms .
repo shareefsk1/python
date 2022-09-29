@@ -1,0 +1,22 @@
+def fibonacci(n):
+    # Complete this function to return nth term in fibonacci series
+    if n == 0 :
+        return 0
+    if n == 1 :
+        return 1
+    nth_term = fibonacci(n-1) + fibonacci(n-2)
+    return nth_term        
+
+def get_fibonacci_series(n):
+    # Complete this function to return list of n terms of fibonacci series
+    fibonacci_list = []
+    if n == 0 :
+        return [0]
+    for i in range(n) :
+        fibonacci_list += [fibonacci(i)]
+    return fibonacci_list
+    
+n = int(input())
+# Call the get_fibonacci_series function
+result = get_fibonacci_series(n)
+print(result)
