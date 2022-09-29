@@ -1,0 +1,14 @@
+def removing_occurence(a) :
+    counting_occurence = nums_list.count(a)
+    if counting_occurence == 0 :
+        return nums_list
+    else :
+        nums_list.remove(a)
+        return removing_occurence(a)
+    
+
+nums_list = [5, 10, 20, 35, 5, 50, 20, 100, 200, 10, 150, 100, 100]
+# Write your code here
+given_input = int(input())
+result = removing_occurence(given_input)
+print(result)
