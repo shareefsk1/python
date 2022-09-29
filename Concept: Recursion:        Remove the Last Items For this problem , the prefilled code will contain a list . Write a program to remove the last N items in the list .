@@ -1,0 +1,11 @@
+def removeing(a) :
+    if a == 0 :
+        return programming_languages
+    programming_languages.pop()
+    return removeing(a-1)
+
+programming_languages = ['Python', 'C', 'Java', 'Ruby', 'C++', 'CSS', 'HTML', 'Bash', 'Perl', 'R', 'Swift', 'SQL', 'PHP', 'JavaScript']
+# Write your code here
+a = int(input())
+result = removeing(a)
+print(result)
