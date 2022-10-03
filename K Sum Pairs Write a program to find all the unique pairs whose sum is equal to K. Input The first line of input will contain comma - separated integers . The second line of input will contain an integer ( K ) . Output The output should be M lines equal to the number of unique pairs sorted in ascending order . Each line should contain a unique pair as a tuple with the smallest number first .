@@ -1,0 +1,28 @@
+def con_str_int(a) :
+    for i in range(len(a)) :
+        a[i] = int(a[i])
+    return a
+
+def identifying_pairs(original_list,b) :
+    total_tuple_list = []
+    update_index = 0
+    for itemss in range(len(original_list)):
+        first_value = original_list[update_index]
+        finding_value = b - first_value
+        updated_list = original_list[update_index+1:]
+        update_index += 1
+        if finding_value in updated_list :
+            tuple_set = (first_value,finding_value)
+            new_t_set = sorted(tuple_set)
+            total_tuple_list += [new_t_set]
+    return total_tuple_list
+
+a = input().split(",")
+original_list = con_str_int(a)
+b = int(input())
+result = identifying_pairs(original_list,b)
+index = 0
+for i in result :
+    index += 1
+    if i not in result[index:] :
+        print(tuple(i))
