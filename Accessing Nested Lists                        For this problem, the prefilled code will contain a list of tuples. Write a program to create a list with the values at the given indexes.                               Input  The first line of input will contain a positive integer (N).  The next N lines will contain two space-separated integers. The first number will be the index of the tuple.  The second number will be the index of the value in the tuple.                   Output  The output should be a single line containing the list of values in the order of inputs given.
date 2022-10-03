@@ -1,0 +1,13 @@
+list_a = [('apple', 'banana', 'orange', 'grapes'), ('cricket', 'football', 'hockey'), ('car', 'bicycle', 'bus')]
+# Write your code here
+a = int(input())
+final_list = []
+ 
+for i in range(a) :
+    b = input().split(" ")
+    for j in range(len(b)) :
+        b[j] = int(b[j])
+    a = b[0]
+    b = b[1]
+    final_list.append(list_a[a][b])
+print(final_list)
