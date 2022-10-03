@@ -1,0 +1,23 @@
+def finding_max_min(tuple_list) :
+    first_ele = []
+    second_ele = []
+    for i in tuple_list :
+        first_ele.append(i[0])
+        second_ele.append(i[1])
+    first_tuple = max(first_ele)
+    first_tuple_1 = min(first_ele)
+    output_tuple = tuple([first_tuple,first_tuple_1])
+    print(output_tuple)
+    first_tuple1 = max(second_ele)
+    first_tuple_11 = min(second_ele)
+    output_tuple1 = tuple([first_tuple1,first_tuple_11])
+    print(output_tuple1)
+    
+a = int(input())
+tuple_list = []
+for i in  range(a) :
+    b = input().split()
+    for j in range(len(b)) :
+        b[j] = int(b[j])
+    tuple_list.append(b)
+finding_max_min(tuple_list)
