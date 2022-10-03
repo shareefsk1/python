@@ -1,0 +1,9 @@
+num_list = [(1, 2, 3, 4, 5, 6), (2, 4, 6, 8), (1, 3, 5, 7)]
+# Write your code here
+a = int(input())
+final_list = []
+for i in num_list :
+    set_con = set(i)
+    set_con.discard(a)
+    final_list.append(tuple(sorted(set_con)))
+print(final_list)
