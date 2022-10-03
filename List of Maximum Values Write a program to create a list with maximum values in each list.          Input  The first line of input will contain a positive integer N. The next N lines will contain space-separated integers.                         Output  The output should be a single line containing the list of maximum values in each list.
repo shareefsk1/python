@@ -1,0 +1,9 @@
+a = int(input())
+new_list = []
+for i in range(a) :
+    b = input().split()
+    for j in range(len(b)) :
+        b[j] = int(b[j])
+    maximum_list_num = max(b)
+    new_list += [maximum_list_num]
+print(new_list)
