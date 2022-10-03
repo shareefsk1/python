@@ -1,0 +1,11 @@
+num_list = [(2, 4, 6, 8), (5, 15, 25, 35), (7, 14, 21)]
+# Write your code here
+b = int(input())
+index_tuple = 0
+for i in range(len(num_list)) :
+    if b in num_list[i] :
+        index_tuple += i
+second_index = num_list[index_tuple].index(b)
+
+msg = "{} {}"
+print(msg.format(index_tuple,second_index))
