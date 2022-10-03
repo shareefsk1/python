@@ -1,0 +1,23 @@
+def converting_str_int(b) :
+    new_set = set()
+    for j in range(len(b)) :
+        b[j] = int(b[j])
+        new_set.add(b[j])
+    return new_set
+    
+def intersection_fun(set_with_list):
+    result = set_with_list[0]
+    for item in set_with_list :
+        result = result.intersection(item)
+    return result
+        
+a = int(input())
+set_with_list = []
+for i in range(a) :
+    b = input().split(" ")
+    list_set = converting_str_int(b)
+    set_with_list.append(list_set)
+final_output = intersection_fun(set_with_list)
+list_output = list(final_output)
+list_output.sort()
+print(list_output)
