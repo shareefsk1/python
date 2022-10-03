@@ -1,0 +1,8 @@
+a = input().lower()
+b = set(a)
+b.discard(" ")
+b = sorted(b)
+for i in b :
+    count = a.count(i)
+    msg = "{}: {}"
+    print(msg.format(i,count))
