@@ -1,0 +1,11 @@
+a = input().split(",")
+for i in range(len(a)) :
+    a[i] = int(a[i])
+b = int(input())
+length = len(a)
+rotating_times = b % length
+
+first_term = a[0 : rotating_times]
+second_term = a[rotating_times:]
+final = second_term + first_term
+print(final)
