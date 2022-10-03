@@ -1,0 +1,8 @@
+a = int(input())
+final_list = []
+for j in range(a) :
+    b = input().split()
+    for i in range(len(b)) :
+        b[i] = int(b[i])
+    final_list.append(b)
+print(final_list)
