@@ -1,0 +1,9 @@
+a = int(input())
+new_list = []
+for j in range(a) :
+    b = input().split()
+    for i in range(len(b)) :#Converting string to integers
+        b[i] = int(b[i])
+    if len(set(b)) == len(b) :#finding unique list or not
+        new_list.append(b)
+print(new_list)
