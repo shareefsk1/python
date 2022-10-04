@@ -1,0 +1,35 @@
+def add_two_matrices(first_matrix, second_matrix, m, n):
+    # final output function
+    for i in range(m) :
+        output_list = []
+        for j in range(n) :
+            first_value = first_matrix[i][j]
+            second_value = second_matrix[i][j]
+            sum_of_two = [first_value + second_value]
+            output_list += sum_of_two
+        print(output_list)
+def convert_string_to_int(list_a):
+    new_list = []
+    for item in list_a:
+        num = int(item)
+        new_list.append(num)
+    return new_list
+
+
+def read_matrix_inputs(m):
+    num_list = []
+    for i in range(m):
+        list_a = input().split()
+        list_a = convert_string_to_int(list_a)
+        num_list.append(list_a)
+    return num_list
+
+
+m, n = input().split()
+m, n = int(m), int(n)
+
+first_matrix = read_matrix_inputs(m)
+second_matrix = read_matrix_inputs(m)
+
+# call the add_two_matrices matrices
+add_two_matrices(first_matrix, second_matrix, m, n)
