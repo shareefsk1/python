@@ -1,0 +1,51 @@
+def get_transpose_of_matrix(matrix, m, n):
+    #get_transpose_of_matrix(num_list, m, n)
+    new_list1 = []
+    for j in range(n) :
+        new_list2 = []
+        for i in range(m) :
+            new_list2 += [matrix[i][j]]
+        new_list1.append(new_list2)
+    return new_list1
+def print_max_min_sum_for_row_wise(updated_num_list):
+    # printing maximum,minimum and sum of matrix
+    maximum_list = []
+    minimum_list = []
+    total_list = []
+    for i in updated_num_list :
+        maximum_value = max(i)
+        maximum_list += [maximum_value]
+        minimum_value = min(i)
+        minimum_list += [minimum_value]
+        total_value = sum(i)
+        total_list += [total_value]
+    print(maximum_list)
+    print(minimum_list)
+    print(total_list)
+ #converting string into integers
+def convert_string_to_int(list_a):
+    new_list = []
+    for item in list_a:
+        num = int(item)
+        new_list.append(num)
+    return new_list
+
+
+m, n = input().split()
+m, n = int(m), int(n)
+num_list = []
+
+for i in range(m):
+    list_a = input().split()
+    list_a = convert_string_to_int(list_a)
+    num_list.append(list_a)
+
+
+# Call the get_transpose_of_matrix function
+updated_num_list = get_transpose_of_matrix(num_list, m, n)
+
+
+# Call the print_max_min_sum_for_row_wise function
+print_max_min_sum_for_row_wise(updated_num_list)
+
+
