@@ -1,0 +1,16 @@
+def get_add_one_by_colors_scores_pairs(giv_input):
+    all_colors_of_score_pairs ={}
+    for item in giv_input:
+        pair = (item.split(":"))
+        color, score = pair[0], int(pair[1])
+        if color in all_colors_of_score_pairs:
+            all_colors_of_score_pairs[color] = all_colors_of_score_pairs[color]+score
+        else:
+            all_colors_of_score_pairs[color] = score
+    return all_colors_of_score_pairs    
+    
+giv_input = input().split(",")
+all_colors_of_score_pairs  = (get_add_one_by_colors_scores_pairs(giv_input))
+abc = sorted(all_colors_of_score_pairs.items())
+print(abc)
+    
