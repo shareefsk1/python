@@ -1,0 +1,25 @@
+def final_output(num_list) :
+    if len(num_list) >= 1 :
+        for i in range(len(num_list)-1) :
+            result = consecutive_sum(num_list)
+            print(result)
+            num_list = result
+
+def consecutive_sum(num_list) :
+    new_list = []
+    for i in range(len(num_list)-1) :
+        sum_of_list = num_list[i] + num_list[i+1]
+        new_list.append(sum_of_list)
+    return new_list
+
+def converting_str_int(a):
+    num_list = []
+    for i in a :
+        num_list += [int(i)]
+    return num_list
+
+input_string = input().split(",")
+num_list = converting_str_int(input_string)
+print(num_list)
+consecutive_sum(num_list)
+final_output(num_list)
