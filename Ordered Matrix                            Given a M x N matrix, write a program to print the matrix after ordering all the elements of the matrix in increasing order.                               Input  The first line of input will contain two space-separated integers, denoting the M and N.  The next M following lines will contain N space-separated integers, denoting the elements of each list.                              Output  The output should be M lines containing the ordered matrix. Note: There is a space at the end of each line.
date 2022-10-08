@@ -1,0 +1,20 @@
+matrix_size = input().split()
+m, n = matrix_size
+
+total_list = []
+for items in range(int(m)) :
+    matrix_rows = input().split()
+    for sub_items in matrix_rows :
+        total_list.append(int(sub_items))
+
+total_list.sort()
+
+column_length = 0
+for i in range(int(m)) :
+    empty_string = ""
+    final_output = total_list[column_length : column_length+int(n)]
+    for sb_items in final_output :
+        empty_string = empty_string + str(sb_items) + ' '
+    column_length += int(n)
+    print(empty_string)
+    
