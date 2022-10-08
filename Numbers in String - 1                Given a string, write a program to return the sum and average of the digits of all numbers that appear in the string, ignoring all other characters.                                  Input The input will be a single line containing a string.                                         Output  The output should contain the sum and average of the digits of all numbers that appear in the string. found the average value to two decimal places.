@@ -1,0 +1,12 @@
+a = input()
+digit_string = ""
+for i in a :
+    if i.isdigit() :
+        digit_string += i
+length_digit_string = len(digit_string)
+total = 0
+for j in digit_string :
+    total += int(j) 
+avarage = total / length_digit_string
+print(total)
+print(round(avarage,2))
