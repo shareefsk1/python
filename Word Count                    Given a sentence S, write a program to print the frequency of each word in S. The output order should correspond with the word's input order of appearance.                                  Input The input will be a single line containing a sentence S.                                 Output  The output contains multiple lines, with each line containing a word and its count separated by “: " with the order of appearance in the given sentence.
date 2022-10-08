@@ -1,0 +1,12 @@
+a = input().split()
+empty_dict = {}
+for i in a :
+    count = a.count(i)
+    if i in empty_dict :
+        continue
+    else :
+        empty_dict[i] = count
+for word,value in empty_dict.items() :
+    msg = "{}: {}"
+    final_output = msg.format(word,value)
+    print(final_output)
