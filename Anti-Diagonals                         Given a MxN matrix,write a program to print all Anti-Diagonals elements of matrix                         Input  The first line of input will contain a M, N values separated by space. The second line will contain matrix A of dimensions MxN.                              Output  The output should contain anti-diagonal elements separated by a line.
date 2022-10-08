@@ -1,0 +1,31 @@
+def matrix_list(m) :
+    matrix_list = []
+    for i in range(m) :
+        matrix_string = input().split()
+        for items in range(len(matrix_string)) :
+            matrix_string[items] = int(matrix_string[items])
+        matrix_list.append(matrix_string)
+    return matrix_list
+
+
+matrix_size = input().split()
+m, n = int(matrix_size[0]),int(matrix_size[1])
+big_list = matrix_list(m)
+
+if m > n :
+    for i in range(m*2 - 1) :
+        empty_list = ""
+        for j in range(m) :
+            for k in range(n) :
+                if i == j + k :
+                    empty_list = empty_list + str(big_list[j][k]) + " "
+        print(empty_list)
+        
+else :
+    for i in range(n*2 - 1) :
+        empty_list = ""
+        for j in range(m) :
+            for k in range(n) :
+                if i == j + k :
+                    empty_list = empty_list + str(big_list[j][k]) + " "
+        print(empty_list)
